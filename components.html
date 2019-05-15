@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+	<head>
+
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>mercury designsystems-components-page</title>
+
+	<link rel="stylesheet" href="designsystemstyles.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400|Montserrat:400,500" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<header>
+
+		<div class="nav-container">
+
+			<div class="logo">
+
+				<a href="index.html">
+
+					<img src= "images/logo1.svg" alt="logo" > 
+
+				<a/>
+
+			</div>
+			
+			<nav class="nav-primary"> 
+
+				<ul>
+
+					<li ><a href="index.html">Home</a></li> 
+
+					<li><a href="style.html">styles</a></li>
+
+					<li><a href="components.html" class="current-page">components</a></li>
+
+					<li><a class="normal-button" href="layout.html"><span>Layout</span></a></li>
+
+
+				</ul>
+
+			</nav>
+
+		</div>
+
+	</header>
+	<main>
+		<h1>Mercury Design Systems UI Components</h1>
+
+		<h2>Button Links</h2>
+
+		<p>Buton links are styled to look line buttons.There are 3 hierarchy levels of buttons designed for Design systems with 5 states of each.</p>
+
+			<figure class="hero-button-example" >
+
+				<figcaption> Hero Button states </figcaption>
+
+					<a  class="hero-button" href="https://www.w3schools.com/html/"><span>Default</span></a>
+
+	  				<a  class="hero-button hovered"  href="https://www.w3schools.com/html/"><span>Hover</span></a>
+
+	  				<a  class="hero-button focused"  href="https://www.w3schools.com/html/"><span>Focus</span></a>
+
+	  				<a  class="hero-button actived"  href="https://www.w3schools.com/html/"><span>Active</span></a>
+		  					
+			</figure>
+
+			<figure>
+
+				<figcaption> Normal Button states </figcaption>
+	
+				<a  class="normal-button" href=""><span>Default</span></a>
+
+				<a  class="normal-button normal-hover" href=""><span>Hover</span></a>
+
+				<a  class="normal-button normal-focus" href=""><span>Focus</span></a>
+
+				<a  class="normal-button normal-active" href=""><span>Active</span></a>
+
+			</figure>
+
+		<h2> Form Inputs </h2>
+
+		<p> These are the components for the Forms which need Call to action buttons to submit with information </p>
+
+		<h3>Text Inputs</h3>
+
+		<p>Text fields let users enter and edit text.hey typically appear in forms and dialogs.</p>
+
+			<figure class="hero-button-example">
+
+				<input type="text" id="your-name" name="your-name" placeholder="Name" required>
+
+				<input class="focus-state" type="text" id="your-name" name="your-name" placeholder="Focus-state" required>
+
+				<input type="text" id="your-name" name="your-name" placeholder="disabled" disabled>
+
+				<input class="error-state" type="text" id="your-name" name="your-name" placeholder="Error-state">
+				<p class="error-text"> Error-message:Invalid Input </p>
+
+			</figure>
+
+		<h3>Text Area</h3>
+
+		<p> A text area can hold an unlimited number of characters, and the text renders in a fixed-width font </p>
+
+			<figure  class="hero-button-example">
+
+				<label for="message">Your Message </label>
+				<textarea id="message" name="massage"></textarea>
+				<p class="textarea-microcopy">0-255 characters</p>
+				
+				<label for="message">Your Message - focus</label>
+				<textarea id="message" name="message" class="focus-state"></textarea>
+				<p class="textarea-microcopy">0-255 characters</p>
+
+				<label for="message">Your Message -  error</label>
+				<textarea id="message" name="message"  class="error-state"></textarea>
+				<p class="textarea-error-text">Exceeds the 255 characters</p>
+
+				<label for="message">Your Message -  Disabled </label>
+				<textarea id="message" name="message"  disabled></textarea>
+				<p class="textarea-microcopy">0-255 characters</p>
+
+			</figure>
+
+		<h3> Button/Submit </h3>
+
+		<p>The submit event triggers when the form is submitted, it is usually used to validate the form before sending it to the server or to abort the submission </p>
+
+			<figure>
+
+	   			<button type="submit">Default Button</button>
+		
+				<button class="hover" type="submit">Hover Button</button>
+
+				<button class="focus" type="submit">Focus Button</button>
+		
+				<button class="button-active" type="submit">Active Button</button>
+
+			</figure>
+
+		<h2>Navigation</h2>
+
+		<p> Navigation in web-pages used to navigate to different pages.</p>
+
+		<h3>Primary Nav</h3>
+
+		<p> It is mainly used in site header.</p>
+	
+
+			<figure class="example-header-container">
+						
+				<nav class="nav-primary"> 
+
+					<ul>
+						<li ><a href="index.html" >home</a></li>
+
+						<li><a href="style.html">style</a></li>	
+
+						<li><a href="components.html" class="current-page" >components</a></li>
+
+						<li><a href="layouts.html">layout</a></li>
+
+					</ul>
+
+				</nav>
+
+			</figure>
+
+		<h3>Page Sub Nav</h3>
+
+		<p> It is used as page guidence.</p>
+
+			<figure>
+
+				<nav class="resume-guide-nav"> 
+
+					<ul>
+
+						<li class="resume-guide-nav-content">
+
+							<a  href="#experience-section">
+
+								<img class="resume-guide-icons" src= "images/work.svg" alt="expereince-guide-icon">
+
+								<p>Expereince</p>
+
+							</a>
+
+						</li> 
+
+						<li class="resume-guide-nav-content">
+
+							<a href="#education-section">
+
+								<img  class="resume-guide-icons" src= "images/educationnav2.svg" alt="education-guide-icon">
+
+								<p>Education</p>
+
+							</a>
+
+						</li>
+
+						<li class="resume-guide-nav-content">
+
+							<a href="#skill-section">
+
+								<img  class="resume-guide-icons" src= "images/laptop.svg" alt="skill-guide-icon">
+
+								<p>Skills</p>
+
+							</a>
+
+						</li>
+
+						<li class="resume-guide-nav-content">
+
+							<a href="#">
+
+								<img  class="resume-guide-icons" src= "images/laptop.svg" alt="contact-guide-icon">
+
+								<p>Contact</p>
+
+							</a>
+
+						</li>
+
+					</ul>
+
+				</nav>
+
+
+			</figure>
+
+		<h2>Hero Block</h2>
+
+		<p>The Hero Block will be used to introduce articles or pages, or to make a very bold call-to-action.</p>
+
+			<figure>
+
+				<a class="hero-block-example" href="hero-component.html" target="_blank" >
+
+					<img src="images/hero.png" alt="hero block image">
+				</a>
+
+			</figure>
+
+		<h2>Portfolio card</h2>
+
+		<p>This card is to show case the portfolio work.</p>
+
+			<figure>
+
+				<div class="portfolio-card-containter">
+
+					<a  href="">
+
+						<img src="images/allergycure.jpg" alt="allergycure-app-image">
+
+						<div class="card-description">
+
+							<h3> Allergy Cure</h3>
+
+							<p>Seasonal Allegry Information,Management,Treatment</p>
+
+						</div>
+
+					</a>
+				</div>
+
+			</figure>
+
+		<h2>Resume card</h2>
+
+		<p>This card is used to display the content in resume</p>
+
+			<figure>
+
+				<div class="experience-content1">
+
+					<img  class="experience-icons" src= "images/work.svg" alt="experience-icon">
+
+					<h3 class>Usability Researcher</h3>
+
+					<p>TLED Division of Austin Community college, Austin, TX</p>
+
+					<p>Jun 2017 - Current</p>
+
+					<p>Worked collaboratively with client to select appropriate tools and usability test methods.</p>
+
+					<p>Conducted remote moderated usability test to validate clients re-designed website before launch date and suggested recommendations.</p>
+
+				</div>
+
+			</figure>
+	
+	</main>
+	<footer class="site-footer">
+        
+            <div class="footer-logo">
+
+            	<img src= "images/footerlogo.svg" alt="footer-logo" > 
+
+            </div>
+
+        
+    		<nav class="site-footer-nav">
+
+	    		<ul>	
+					<li><a href="">Facebook </a></li> 
+					<li><a href="">Linkedin </a></li> 
+					<li><a href="">Twitter</a></li> 
+				</ul>
+		   </nav>
+
+		   <p>Copyright © 2018 Anu kandimalla . All rights reserved</P>
+
+	</footer>
+
+</body>
+
+</html>
